@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#651d34">
+<title>Les connecteurs en français · Meta英硕</title>
+<style>
+:root{color-scheme:light;--wine:#651d34;--dark:#451123;--paper:#fff;--bg:#f7f4f4;--ink:#272027;--muted:#695e64;--rule:#e6dce0;--rose:#f5e8ed;--green:#245940;--serif:Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--sans);min-height:100vh;display:flex;flex-direction:column}
+button{font:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible,[tabindex]:focus-visible{outline:3px solid #a6375b;outline-offset:4px}
+button:disabled{cursor:default;opacity:.45}
+header{position:sticky;top:0;z-index:2;background:var(--paper);border-bottom:1px solid var(--rule)}
+.bar{max-width:1280px;margin:auto;min-height:84px;padding:14px 32px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;background:none;border:0;text-align:left;color:var(--ink);padding:0}
+.monogram{background:var(--wine);color:white;width:46px;height:46px;border-radius:8px;display:grid;place-items:center;font:700 30px var(--serif)}
+.brand strong{display:block;font-size:17px}
+.brand small,.label{display:block;text-transform:uppercase;letter-spacing:.105em;color:var(--muted);font-size:.73rem;font-weight:750}
+.time{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:.8rem}
+.time strong{font-size:1.65rem;color:var(--wine);font-variant-numeric:tabular-nums}
+.time.urgent strong{color:#a31d40}
+main{width:min(100%,1280px);margin:0 auto;padding:36px 32px 60px;flex:1}
+footer{padding:20px;text-align:center;font-size:.81rem;color:var(--muted);border-top:1px solid var(--rule)}
+h1,h2,p{margin:0}
+h1,h2.display{font-family:var(--serif);font-weight:400;line-height:1.12;letter-spacing:-.025em}
+h1{font-size:clamp(2.1rem,5vw,4rem)}
+h2.display{font-size:clamp(1.8rem,4vw,3.2rem);overflow-wrap:anywhere}
+.hero{border-radius:14px;background:var(--dark);color:#fff;padding:clamp(30px,7vw,84px);position:relative;overflow:hidden;min-height:250px;display:flex;flex-direction:column;justify-content:center}
+.hero::after{content:"";position:absolute;pointer-events:none;right:-120px;top:-170px;width:490px;height:490px;border-radius:50%;border:1px solid #fff2;box-shadow:0 0 0 52px #fff1,0 0 0 105px #fff1}
+.hero .label{color:#f2bccd;margin-bottom:14px}
+.home-grid,.layout{display:grid;gap:20px;margin-top:20px}
+.home-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.layout{grid-template-columns:minmax(0,1fr) 295px;align-items:start}
+.panel{background:var(--paper);border:1px solid var(--rule);border-radius:12px;padding:clamp(18px,4vw,46px)}
+.home-grid h2{font-size:1.55rem;margin:10px 0}
+.home-grid p{color:var(--muted);margin-bottom:22px}
+.actions,.topline{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.topline{padding-bottom:16px;border-bottom:1px solid var(--rule);margin-bottom:22px}
+.btn{display:inline-flex;justify-content:center;align-items:center;min-height:44px;padding:10px 16px;border-radius:7px;border:1px solid var(--rule);background:#fff;color:var(--wine);font-weight:700}
+.btn:hover:not(:disabled){background:var(--rose)}
+.primary{background:var(--wine);border-color:var(--wine);color:white}
+.primary:hover:not(:disabled){background:var(--dark)}
+.prompt{font:clamp(1.35rem,3vw,2.2rem)/1.35 var(--serif);margin:10px 0 23px}
+.blank{display:inline-block;width:2.7em;border-bottom:2px solid var(--wine);vertical-align:baseline}
+.options{display:grid;gap:9px;margin:16px 0 28px}
+.option{text-align:left;border:1px solid var(--rule);border-radius:8px;background:#fff;color:var(--ink);padding:9px 12px;display:flex;gap:12px;align-items:center;min-height:47px}
+.option:hover,.option[aria-checked="true"]{background:var(--rose);border-color:var(--wine)}
+.option span{font-weight:800;color:var(--wine);width:1.1em}
+aside.panel{padding:22px}
+.navgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin:16px 0}
+.navgrid button{height:39px;border:1px solid var(--rule);border-radius:6px;background:#fff;color:var(--muted);font-weight:700}
+.navgrid button.done{background:var(--rose);color:var(--wine)}
+.navgrid button[aria-current]{background:var(--wine);color:white;border-color:var(--wine)}
+aside .primary{width:100%;margin-top:14px}
+.muted{color:var(--muted);font-size:.9rem}
+.narrow{max-width:860px;margin:20px auto 0}
+progress{display:block;width:100%;height:9px;accent-color:var(--wine);margin:12px 0 20px}
+.cardnote{margin:19px 0}
+blockquote{margin:0 0 24px;padding:13px 17px;border-left:3px solid var(--wine);background:var(--bg);font:1.2rem/1.5 var(--serif)}
+.tag{display:inline-block;background:var(--rose);color:var(--wine);border-radius:5px;padding:4px 9px;margin:10px 0 0;font-size:.8rem}
+.result{margin:16px 0 0}
+details{border-top:1px solid var(--rule);padding:12px 0}
+summary{cursor:pointer;font-weight:700}
+details p{margin-top:8px}
+.good{color:var(--green)}
+.bad{color:var(--wine)}
+dialog{width:min(90vw,450px);padding:25px;border:1px solid var(--rule);border-radius:12px;color:var(--ink)}
+dialog::backdrop{background:#25152099}
+dialog p{margin:12px 0 22px}
+@media(max-width:710px){main{padding:20px 14px 35px}.bar{padding:12px 14px;min-height:68px}.home-grid,.layout{grid-template-columns:1fr}.time{gap:5px}.time small{display:none}.navgrid button{height:42px}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<button id="brand" class="brand" aria-label="Accueil Meta英硕"><span class="monogram" aria-hidden="true">M</span><span><strong lang="zh-CN">Meta英硕</strong><small>Français</small></span></button>
+<div id="clock" class="time" style="display:none"><small>Temps restant</small><strong id="time" role="timer" aria-label="Temps restant">30:00</strong></div>
+</div></header>
+<main id="app"></main>
+<footer lang="zh-CN">原创研发@公众号Meta英硕</footer>
+<dialog id="confirmation">
+<form method="dialog">
+<h2>Remettre le test ?</h2>
+<p id="confirmText"></p>
+<div class="actions"><button class="btn" value="cancel" autofocus>Continuer le test</button><button class="btn primary" value="submit">Remettre le test</button></div>
+</form>
+</dialog>
+<script id="data" type="application/json">{"questions": [{"stem": "_____ sa grande expérience dans le domaine médical, ce chirurgien a hésité avant d'accepter cette opération délicate.", "options": ["Bien que", "En dépit de", "Tandis que", "Faute de"], "key": 1, "note": "空后直接接名词短语（sa grande expérience），必须选介词短语 en dépit de（尽管）；A、C 后需接完整从句，D（由于缺乏）语义相反。"}, {"stem": "Le chercheur a rédigé son rapport en anglais _____ ses collègues étrangers puissent le consulter immédiatement.", "options": ["si bien que", "alors que", "afin que", "depuis que"], "key": 2, "note": "从句动词 puissent 为虚拟式，且语义表主观目的（以便同事查阅），选 afin que；A、B、D 均后接直陈式。"}, {"stem": "Nous avons décidé d'annuler la randonnée en montagne, _____ la météo annonce de violents orages cet après-midi.", "options": ["d'autant plus que", "bien que", "pourvu que", "avant que"], "key": 0, "note": "从句为直陈式（annonce），用于补充加强取消徒步的原因（更何况天气预报有暴风雨），选 d'autant plus que；B、C、D 均需接虚拟式。"}, {"stem": "_____ vous preniez le train ou l'avion, le trajet jusqu'à Marseille vous prendra plusieurs heures.", "options": ["Tant que", "Que", "Dès que", "Parce que"], "key": 1, "note": "构成选择性让步结构 que ... ou (que) ...（无论是……还是……），后接虚拟式 preniez。"}, {"stem": "Prenez cette clé de secours _____ vous rentreriez tard et trouveriez la porte principale verrouillée.", "options": ["à condition que", "en cas de", "au cas où", "malgré"], "key": 2, "note": "这里提醒对方为可能发生的情况做准备。au cas où 表示“万一”，后接条件式。rentreriez 和 trouveriez 都是条件式现在时。en cas de 后接名词短语，如 en cas de fermeture."}, {"stem": "Ce jeune pianiste joue cette sonate complexe _____ il l'avait composée lui-même.", "options": ["comme si", "pour que", "quoique", "sans que"], "key": 0, "note": "从句用愈过去时（avait composée）表达与事实相反的假设（仿佛是他自己作曲的一样），锁定 comme si。"}, {"stem": "L'entreprise a modernisé toute sa chaîne de production, _____ ses coûts de fabrication ont considérablement diminué.", "options": ["afin que", "à moins que", "de sorte que", "encore que"], "key": 2, "note": "从句为直陈式（ont diminué），表示技术升级带来的客观结果（以至于成本下降），选 de sorte que + Ind.；A、B、D 均需接虚拟式。"}, {"stem": "_____ son intervention rapide, l'incendie aurait détruit l'ensemble des archives historiques du musée.", "options": ["Grâce à", "Sans", "En raison de", "À force de"], "key": 1, "note": "主句使用条件式过去时（aurait détruit，本来会烧毁），需搭配表示否定假设的介词 sans（如果没有他的及时介入）。"}, {"stem": "Les négociations reprendront demain matin, _____ un nouveau désaccord ne vienne bloquer les discussions.", "options": ["pourvu que", "à moins que", "puisque", "tandis que"], "key": 1, "note": "语义为“明天恢复谈判，除非出现新的分歧”，且从句带有赘词 ne 及虚拟式 vienne，锁定 à moins que。"}, {"stem": "Il a quitté la salle de réunion sur la pointe des pieds _____ personne ne remarque son départ.", "options": ["sans que", "avant de", "alors que", "parce que"], "key": 0, "note": "主从句主语不一致（Il 与 personne），且表示伴随的否定结果（而没有被人注意到），选 sans que + Subj.；B（avant de）要求主从句主语一致。"}, {"stem": "_____ ce quartier soit très animé en été, il devient presque désert dès l'arrivée de l'automne.", "options": ["Puisque", "Quoique", "Si bien que", "Après que"], "key": 1, "note": "主从句形成让步转折（夏天热闹，秋天冷清），且从句动词 soit 为虚拟式，选 quoique（虽然）。"}, {"stem": "Les touristes doivent patienter dans le hall d'entrée _____ le guide vienne les chercher.", "options": ["en attendant que", "après que", "dès que", "pendant que"], "key": 0, "note": "导游还没来，动作尚未发生，从句用虚拟式 vienne，表示“在等待……期间”，选 en attendant que。"}, {"stem": "_____ le public eut quitté la salle, les techniciens commencèrent à démonter les décors du spectacle.", "options": ["Avant que", "Pour que", "Après que", "Jusqu'à ce que"], "key": 2, "note": "从句使用先过去时（eut quitté，直陈式），表示“在观众离场之后”才拆布景，锁定 après que + Ind.（注意 après que 接直陈式）。"}, {"stem": "Ce roman policier est _____ captivant _____ je l'ai lu d'une seule traite pendant la nuit.", "options": ["aussi ... que", "si ... que", "trop ... pour que", "plus ... plus"], "key": 1, "note": "修饰形容词 captivant，且后接直陈式结果从句（一口气读完），构成 si + adj. + que（如此……以至于……）；C 需接虚拟式且表否定结果。"}, {"stem": "L'athlète a refusé de participer à la finale _____ il souffrait d'une légère douleur au genou.", "options": ["grâce à", "sous prétexte qu'", "pourvu qu'", "quoi qu'"], "key": 1, "note": "运动员以膝盖微痛为理由拒绝参赛，暗含客观托词或借口之意，且后接直陈式，选 sous prétexte que。"}, {"stem": "_____ convaincants que soient vos arguments, le jury préfère maintenir sa décision initiale.", "options": ["Quelques", "Quels que", "Quoi que", "Aussi"], "key": 3, "note": "aussi + 形容词 + que + 虚拟式表示“无论多么……”。这里 convaincants 是形容词，soient vos arguments 使用倒装。副词 quelque 也能构成同类结构，但须写作 quelque，选项 Quelques 的复数形式不合适。"}, {"stem": "Il a accepté ce poste à l'étranger, _____ s'éloigner de sa famille pendant deux ans.", "options": ["quitte à", "de peur que", "à condition que", "faute de"], "key": 0, "note": "空后为动词原形 s'éloigner，语义为“甚至不惜离开家人两年”，选 quitte à + Inf.；B、C 需接从句，D 语义不符。"}, {"stem": "_____ on s'approche du sommet de la montagne, _____ la végétation se fait rare.", "options": ["Tantôt ... tantôt", "Soit ... soit", "Plus ... plus", "Ni ... ni"], "key": 2, "note": "表示两个变化同步递进（越靠近山顶，植被越稀少），使用成对关联结构 plus ... plus ...（注意中间不加连词）。"}, {"stem": "Le projet de loi a été adopté _____ une forte opposition de plusieurs syndicats.", "options": ["bien que", "malgré", "pourtant", "alors que"], "key": 1, "note": "空后是名词短语（une forte opposition），只能使用介词 malgré（尽管）；A、D 需接从句，C 为副词不可直接接名词。"}, {"stem": "Je vous prêterai volontiers cet ouvrage rare, _____ vous me le rendiez avant la fin du mois.", "options": ["tant que", "à condition que", "dans la mesure où", "puisque"], "key": 1, "note": "在句中，月底前归还是借书的条件。à condition que 后接虚拟式。rendiez 的词形也可用于直陈式未完成过去时，但在这里由连词和语境确定为虚拟式现在时。"}, {"stem": "_____ il ait beaucoup neigé cette nuit, la circulation reste fluide sur les axes principaux.", "options": ["Comme", "Encore qu'", "Vu qu'", "Dès lors qu'"], "key": 1, "note": "从句动词 ait neigé 为虚拟式，前后构成让步关系（虽然昨晚下了大雪，但交通依然顺畅），选 encore que（虽然）；A、C、D 均表原因且接直陈式。"}, {"stem": "Le conférencier parlait à voix basse _____ les spectateurs du dernier rang ne l'entendaient pas.", "options": ["si bien que", "afin que", "de crainte que", "pour que"], "key": 0, "note": "从句为直陈式（entendaient），表示说话声音小带来的客观结果（以至于后排听不见），选 si bien que（纯粹表结果，只接直陈式）。"}, {"stem": "_____ de répéter les mêmes exercices chaque jour, elle a fini par maîtriser parfaitement ce morceau.", "options": ["Faute", "À force", "En vue", "En cas"], "key": 1, "note": "语义为“由于反复练习，最终掌握了曲子”，构成 à force de + Inf.（由于频繁做某事）。"}, {"stem": "Le contrat n'est pas encore signé ; _____ , les deux parties se sont déjà mises d'accord sur l'essentiel.", "options": ["bien que", "néanmoins", "tandis que", "puisque"], "key": 1, "note": "分号之后需要一个能独立使用的转折副词。néanmoins 表示“然而”，把尚未签约和已经达成基本共识联系起来。其余三个选项均引导从句。"}, {"stem": "Cet appartement ne possède _____ balcon _____ cave, mais sa luminosité compense largement ces défauts.", "options": ["soit ... soit", "non seulement ... mais aussi", "ni ... ni", "d'une part ... d'autre part"], "key": 2, "note": "句首已有否定词 ne（且无 pas），表示“既没有阳台也没有地下室”，锁定双否定关联词 ni ... ni ...。"}], "cards": [{"id": 1, "title": "bien que", "category": "Concession et Opposition", "structure": "+ Subj.", "note": "虽然，尽管。最基础高频让步连词，引出与主句预期相反的事实。", "example": "Bien que le délai soit très court, l’équipe refuse de réduire les contrôles."}, {"id": 2, "title": "quoique", "category": "Concession et Opposition", "structure": "+ Subj.", "note": "虽然，尽管。与 bien que 完全同义；严防与 quoi que（无论什么）混淆。", "example": "Quoiqu’il pleuve à verse, la manifestation est maintenue."}, {"id": 3, "title": "encore que", "category": "Concession et Opposition", "structure": "+ Subj.", "note": "虽然，不过（C1 高频）。带有对前文补充修正、略微削弱断言的意味。", "example": "Ce projet est réalisable, encore qu’il demande un budget colossal."}, {"id": 4, "title": "si / aussi + adj./adv. + que", "category": "Concession et Opposition", "structure": "+ Subj.", "note": "无论多么……（B2/C1 书面语高级让步结构）。", "example": "Aussi intelligent qu’il soit, il peut se tromper."}, {"id": 5, "title": "quelque + adj./adv. + que", "category": "Concession et Opposition", "structure": "+ Subj.", "note": "无论多么……。此结构中 quelque 为副词，词尾永不配合。", "example": "Quelque habiles que soient ces artisans, ils ont besoin de temps."}, {"id": 6, "title": "quel(le)(s) que + être", "category": "Concession et Opposition", "structure": "+ Subj.", "note": "无论……是怎样的。quel 为形容词，需与主语性数配合，后接 être。", "example": "Quelles que soient vos raisons, votre retard est inexcusable."}, {"id": 7, "title": "quoi que", "category": "Concession et Opposition", "structure": "+ Subj.", "note": "无论什么（两个词分开写，作直接宾语或表语）。", "example": "Quoi que tu fasses, réfléchis bien aux conséquences."}, {"id": 8, "title": "qui que / où que", "category": "Concession et Opposition", "structure": "+ Subj.", "note": "无论是谁 / 无论在哪里（作表语或地点状语）。", "example": "Où que vous alliez, n’oubliez pas vos racines."}, {"id": 9, "title": "sans que", "category": "Concession et Opposition", "structure": "+ Subj.", "note": "而没有……（表伴随的否定让步；主语相同时必须用 sans + Inf.）。", "example": "Il est parti sans que personne s’en aperçoive."}, {"id": 10, "title": "au lieu que", "category": "Concession et Opposition", "structure": "+ Subj.", "note": "非但没有……反而……（后接从句；主语相同用 au lieu de + Inf.）。", "example": "Au lieu qu’on le félicite, il a été sévèrement critiqué."}, {"id": 11, "title": "loin que", "category": "Concession et Opposition", "structure": "+ Subj.", "note": "非但没有……反而……（C1 书面语，主语相同用 loin de + Inf.）。", "example": "Loin qu’il se décourage, cet échec a stimulé son ambition."}, {"id": 12, "title": "tandis que", "category": "Concession et Opposition", "structure": "+ Ind.", "note": "而，然而（客观对比两端事实，如图片26题；也可表时间“当……时”）。", "example": "Certains souhaitent reporter la réunion, tandis que d’autres préfèrent décider aujourd’hui."}, {"id": 13, "title": "alors que", "category": "Concession et Opposition", "structure": "+ Ind.", "note": "然而，却（转折对比语气比 tandis que 更强，常含不满或意外）。", "example": "Il dépense sans compter, alors qu’il n’a plus un sou en banque."}, {"id": 14, "title": "tout + gérondif / tout en + p.prés.", "category": "Concession et Opposition", "structure": "副动词", "note": "虽然……但是……（主从句主语必须一致，兼表同时性与让步）。", "example": "Tout en reconnaissant ses torts, il refuse de s’excuser."}, {"id": 15, "title": "quitte à", "category": "Concession et Opposition", "structure": "+ Inf.", "note": "哪怕，纵使，甚至不惜……（表示愿意承担某种负面后果以达成目的）。", "example": "Je dirai la vérité, quitte à déplaire à mon supérieur."}, {"id": 16, "title": "malgré", "category": "Concession et Opposition", "structure": "+ Nom", "note": "尽管（介词，后只能接名词/代词，绝对不可接 que）。", "example": "Malgré la pluie, nous sommes sortis."}, {"id": 17, "title": "en dépit de", "category": "Concession et Opposition", "structure": "+ Nom", "note": "不顾，尽管（malgré 的书面语升级版，介词短语）。", "example": "En dépit de ses efforts, il a échoué à l’examen."}, {"id": 18, "title": "avoir beau", "category": "Concession et Opposition", "structure": "+ Inf.", "note": "无论怎么……也白搭（法语核心惯用表达，动词 avoir 随主语变位）。", "example": "J’ai beau lui expliquer, il ne comprend toujours pas."}, {"id": 19, "title": "pourtant", "category": "Concession et Opposition", "structure": "(Adv.)", "note": "然而，可是（副词，不可直接连接无标点从句，易与 bien que 混淆）。", "example": "Le train était supprimé ; pourtant, les voyageurs sont restés calmes."}, {"id": 20, "title": "néanmoins / toutefois", "category": "Concession et Opposition", "structure": "(Adv.)", "note": "然而，不过（较正式的转折副词，多用于书面议论文）。", "example": "Les résultats sont encourageants ; néanmoins, la prudence reste de mise."}, {"id": 21, "title": "cependant", "category": "Concession et Opposition", "structure": "(Adv.)", "note": "然而，可是（可表转折副词；作时间副词时意为“在此期间”）。", "example": "Ce médicament est efficace ; cependant, il présente des effets secondaires."}, {"id": 22, "title": "en revanche / par contre", "category": "Concession et Opposition", "structure": "(Adv.)", "note": "相反，另一方面（en revanche 偏正式，par contre 偏口语）。", "example": "L’hôtel est cher ; en revanche, le service est irréprochable."}, {"id": 23, "title": "parce que", "category": "Cause", "structure": "+ Ind.", "note": "因为（回答 pourquoi，引出听话人不知道的客观新原因）。", "example": "Il est absent parce qu’il est malade."}, {"id": 24, "title": "puisque", "category": "Cause", "structure": "+ Ind.", "note": "既然（陈述双方已知的事实并据此推理，多置于句首）。", "example": "Puisque le train était supprimé, la compagnie a organisé un service d’autocars."}, {"id": 25, "title": "comme", "category": "Cause", "structure": "+ Ind.", "note": "由于，既然（必须置于句首，兼有原因与时间背景意味）。", "example": "Comme il faisait nuit, nous avons allumé les phares."}, {"id": 26, "title": "étant donné que / vu que", "category": "Cause", "structure": "+ Ind.", "note": "鉴于，考虑到（客观陈述已知前提，常见于公文、报道）。", "example": "Étant donné que les preuves sont insuffisantes, l’affaire est classée."}, {"id": 27, "title": "du moment que", "category": "Cause", "structure": "+ Ind.", "note": "既然……；只要……。用于提出理由或充分条件，通常接直陈式。", "example": "Du moment que tu es d’accord, nous pouvons signer le contrat."}, {"id": 28, "title": "dès lors que", "category": "Cause", "structure": "+ Ind.", "note": "既然，一旦（C1 高频，带有“从这个前提确立的那一刻起”的意味）。", "example": "Dès lors que la loi est votée, chacun doit la respecter."}, {"id": 29, "title": "attendu que / considérant que", "category": "Cause", "structure": "+ Ind.", "note": "鉴于，考虑到（法律文书、判决书、正式决议常用套语）。", "example": "Attendu que l’accusé n’a aucun antécédent, le tribunal prononce le sursis."}, {"id": 30, "title": "sous prétexte que", "category": "Cause", "structure": "+ Ind.", "note": "借口……（暗含说话人对这个理由的怀疑、不信任或否定）。", "example": "Il a refusé de venir sous prétexte qu’il avait trop de travail."}, {"id": 31, "title": "non (pas) que ... mais parce que", "category": "Cause", "structure": "+ Subj. / + Ind.", "note": "不是因为……而是因为……（否定虚假原因用虚拟式，肯定真实原因用直陈式）。", "example": "Je pars non que je sois fâché, mais parce que je suis fatigué."}, {"id": 32, "title": "ce n’est pas que ... mais c’est que", "category": "Cause", "structure": "+ Subj. / + Ind.", "note": "并不是因为……而是因为……。前半句用虚拟式排除错误解释，后半句用直陈式给出真正的原因。", "example": "Ce n’est pas qu’il manque de talent, mais c’est qu’il manque de rigueur."}, {"id": 33, "title": "d’autant (plus) que", "category": "Cause", "structure": "+ Ind.", "note": "尤其是因为，更何况（用于补充加强前文已经成立的原因）。", "example": "Ce poste m’intéresse, d’autant plus que je parle couramment français."}, {"id": 34, "title": "du fait que", "category": "Cause", "structure": "+ Ind. / Subj.", "note": "由于……这一事实（强调客观事实用直陈式；强调假设/主观评价可用虚拟式）。", "example": "Son retard s’explique du fait que les transports étaient en grève."}, {"id": 35, "title": "faute de", "category": "Cause", "structure": "+ Nom / Inf.", "note": "由于缺乏……（介词短语，表负面原因，后接无冠词名词）。", "example": "Faute de financement suffisant, le laboratoire a dû interrompre l’étude."}, {"id": 36, "title": "à force de", "category": "Cause", "structure": "+ Nom / Inf.", "note": "由于频繁/过度……（表反复动作累积导致的结果）。", "example": "À force de s’entraîner, elle a fini par gagner la médaille d’or."}, {"id": 37, "title": "grâce à", "category": "Cause", "structure": "+ Nom", "note": "多亏了……。通常引出带来有利结果的原因，也可用于反讽。", "example": "Grâce à votre aide, nous avons terminé à temps."}, {"id": 38, "title": "à cause de / en raison de", "category": "Cause", "structure": "+ Nom", "note": "因为，由于（à cause de 偏消极中性；en raison de 偏正式客观）。", "example": "Le match a été annulé en raison des intempéries."}, {"id": 39, "title": "pour", "category": "Cause", "structure": "+ Inf. passé", "note": "因为做了某事（后接不定式过去式时表原因，而非目的！）。", "example": "Il a été condamné pour avoir falsifié des documents."}, {"id": 40, "title": "en effet / car", "category": "Cause", "structure": "(Adv.) / Coord.", "note": "的确；因为。car 是并列连词，用于补充解释；en effet 是副词，可在新句中承接前文。", "example": "Rentrons vite, car l’orage approche."}, {"id": 41, "title": "afin que / pour que", "category": "But et Conséquence", "structure": "+ Subj.", "note": "以便，为了（表主观目的；主语一致须用 afin de / pour + Inf.）。", "example": "La guide parlait lentement afin que tous les visiteurs puissent prendre des notes."}, {"id": 42, "title": "de peur que / de crainte que", "category": "But et Conséquence", "structure": "+ Subj. (ne explétif facultatif)", "note": "唯恐，以免（表消极目的，书面语常带赘词 ne；主语一致用 de peur de + Inf.）。", "example": "Elle parle à voix basse de peur que le bébé ne se réveille."}, {"id": 43, "title": "en vue de / dans le but de", "category": "But et Conséquence", "structure": "en vue de + Nom / Inf. · dans le but de + Inf.", "note": "为了，旨在（正式书面语介词短语，不可直接接 que 引导从句）。", "example": "Des mesures ont été prises en vue de réduire la pollution."}, {"id": 44, "title": "de façon (à ce) que", "category": "But et Conséquence", "structure": "+ Subj. / Ind.", "note": "后接虚拟式 = 表目的（为了）；后接直陈式 = 表结果（以至于）。", "example": "Expliquez clairement de façon que tout le monde comprenne.（目的）"}, {"id": 45, "title": "de manière (à ce) que", "category": "But et Conséquence", "structure": "+ Subj. / Ind.", "note": "为了……；以至于……。虚拟式表目的，直陈式表实际结果。", "example": "Il a agi de manière que personne ne s’est douté de rien.（结果）"}, {"id": 46, "title": "de sorte que / en sorte que", "category": "But et Conséquence", "structure": "+ Ind. / Subj.", "note": "最常考表结果（+ Ind.）；接虚拟式时表目的。", "example": "Le logiciel a été simplifié, de sorte que même les nouveaux employés peuvent l’utiliser."}, {"id": 47, "title": "si bien que", "category": "But et Conséquence", "structure": "+ Ind.", "note": "以至于，结果是（纯粹表结果，只能用直陈式）。", "example": "Il a neigé toute la nuit, si bien que les routes sont bloquées."}, {"id": 48, "title": "au point que / à tel point que", "category": "But et Conséquence", "structure": "+ Ind.", "note": "到了……的地步（强调结果程度极深，主语一致可用 au point de + Inf.）。", "example": "Il était épuisé au point qu’il s’est endormi debout."}, {"id": 49, "title": "si / tellement + adj./adv. + que", "category": "But et Conséquence", "structure": "+ Ind.", "note": "如此……以至于……（修饰形容词或副词；主句为否定或疑问时可用虚拟式）。", "example": "Le film était tellement ennuyeux que nous sommes partis avant la fin."}, {"id": 50, "title": "tant / tellement de + Nom + que", "category": "But et Conséquence", "structure": "+ Ind.", "note": "如此多的……以至于……（修饰名词，注意介词 de）。", "example": "Il y avait tant de bruit que je ne m’entendais plus penser."}, {"id": 51, "title": "tel(le)(s) ... que", "category": "But et Conséquence", "structure": "+ Ind.", "note": "如此……以至于……（tel 为形容词，与所修饰名词性数配合）。", "example": "Sa colère était telle qu’il ne pouvait plus prononcer un mot."}, {"id": 52, "title": "trop / assez + adj. + pour que", "category": "But et Conséquence", "structure": "+ Subj.", "note": "太……以至于不能…… / 足够……以至于能够……（必须接虚拟式！）。", "example": "Ce problème est trop complexe pour qu’on le résolve en cinq minutes."}, {"id": 53, "title": "sans que", "category": "But et Conséquence", "structure": "+ Subj.", "note": "没有……；在……未发生的情况下。接虚拟式，可表示伴随情况或未发生的结果。", "example": "Il a traversé la foule sans que personne le remarque."}, {"id": 54, "title": "c’est pourquoi", "category": "But et Conséquence", "structure": "(Adv.)", "note": "这就是为什么，因此（置于句首引出结果，后接直陈式）。", "example": "La route est verglacée ; c’est pourquoi je roule lentement."}, {"id": 55, "title": "par conséquent / en conséquence", "category": "But et Conséquence", "structure": "(Adv.)", "note": "因此，所以（逻辑推理结论，正式书面语连接副词）。", "example": "Les stocks sont épuisés ; par conséquent, les livraisons sont suspendues."}, {"id": 56, "title": "dès lors / ainsi / aussi (+倒装)", "category": "But et Conséquence", "structure": "(Adv.)", "note": "因此，于是（aussi 放句首表“因此”时，主谓通常需倒装）。", "example": "Il pleuvait ; aussi avons-nous décidé de rester à l’intérieur."}, {"id": 57, "title": "d’où", "category": "But et Conséquence", "structure": "+ Nom", "note": "由此产生……。常后接名词短语，指出前文带来的结果。", "example": "Les trains sont en grève, d’où les nombreux embouteillages."}, {"id": 58, "title": "de là à + Inf.", "category": "But et Conséquence", "structure": "介词短语", "note": "从这一点推论到……（常用于否定或反问，表“不至于得出某种结论”）。", "example": "Il a fait une erreur, de là à dire qu’il est incompétent, il y a un pas."}, {"id": 59, "title": "si", "category": "Condition et Hypothèse", "structure": "+ Ind. (禁止将来时)", "note": "如果（三大黄金时态搭配：présent + futur；imparfait + cond. présent；plus-que-parfait + cond. passé）。", "example": "Si j’avais su, je ne serais pas venu."}, {"id": 60, "title": "pourvu que", "category": "Condition et Hypothèse", "structure": "+ Subj.", "note": "只要……。提出条件。独立成句时可表示“但愿……”。", "example": "Vous pouvez modifier l’horaire, pourvu que tous les participants soient prévenus à temps."}, {"id": 61, "title": "à condition que", "category": "Condition et Hypothèse", "structure": "+ Subj.", "note": "条件是……，只要……。主语相同时通常用 à condition de + Inf.", "example": "Je te prête ma voiture à condition que tu fasses le plein."}, {"id": 62, "title": "à moins que", "category": "Condition et Hypothèse", "structure": "+ Subj. (ne explétif facultatif)", "note": "除非……（表否定条件；主语相同时用 à moins de + Inf.）。", "example": "Nous maintiendrons la sortie à moins que la météo ne devienne vraiment dangereuse."}, {"id": 63, "title": "pour peu que", "category": "Condition et Hypothèse", "structure": "+ Subj.", "note": "只要稍微……（强调极小的条件即可引发结果，C1 高频）。", "example": "Pour peu qu’on l’encourage, il fera d’énormes progrès."}, {"id": 64, "title": "en admettant que", "category": "Condition et Hypothèse", "structure": "+ Subj.", "note": "假定，退一步说（用于推演某种假设情景）。", "example": "En admettant qu’il accepte, comment financerons-nous le projet ?"}, {"id": 65, "title": "en supposant que / à supposer que", "category": "Condition et Hypothèse", "structure": "+ Subj.", "note": "假设，假定（à supposer que 多置于句首）。", "example": "À supposer que le train ait du retard, nous prendrons un taxi."}, {"id": 66, "title": "soit que ... soit que ...", "category": "Condition et Hypothèse", "structure": "+ Subj.", "note": "要么是因为……要么是因为……（列举两种不确定的假设原因，必须用虚拟式）。", "example": "Il n’est pas venu, soit qu’il ait oublié, soit qu’il ait été retenu."}, {"id": 67, "title": "que ... ou que ...", "category": "Condition et Hypothèse", "structure": "+ Subj.", "note": "无论是……还是……（引导选择性假设让步从句，用虚拟式）。", "example": "Qu’il pleuve ou qu’il vente, il fait son jogging chaque matin."}, {"id": 68, "title": "pour autant que / autant que", "category": "Condition et Hypothèse", "structure": "+ Subj. / Ind.", "note": "据我所知 / 只要在……范围内（如 pour autant que je sache 用虚拟式；autant que je sais 用直陈式）。", "example": "Pour autant que je sache, la réunion n’a pas été annulée."}, {"id": 69, "title": "dans la mesure où", "category": "Condition et Hypothèse", "structure": "+ Ind.", "note": "在……的程度上，既然（既表限定条件也表原因，用直陈式，B2/C1 作文神词）。", "example": "Nous vous aiderons dans la mesure où nos moyens le permettent."}, {"id": 70, "title": "selon que ... ou (que) ...", "category": "Condition et Hypothèse", "structure": "+ Ind.", "note": "根据……还是……（取决于不同客观情况，用直陈式）。", "example": "Le tarif varie selon que vous voyagez en haute ou en basse saison."}, {"id": 71, "title": "au cas où / dans l’hypothèse où", "category": "Condition et Hypothèse", "structure": "au cas où + Cond. · dans l’hypothèse où + Cond. (souvent)", "note": "万一……；假设……。au cas où 在考试中搭配条件式；dans l’hypothèse où 常用条件式引出假设。", "example": "Prends un parapluie au cas où il pleuvrait."}, {"id": 72, "title": "en cas de", "category": "Condition et Hypothèse", "structure": "+ Nom", "note": "万一发生……（介词短语，后只能接名词，不可接从句）。", "example": "En cas d’incendie, n’utilisez pas l’ascenseur."}, {"id": 73, "title": "sans", "category": "Condition et Hypothèse", "structure": "+ Nom / Inf.", "note": "如果没有……（介词替代假设，相当于 si + 否定）。", "example": "Sans ton intervention, tout aurait échoué."}, {"id": 74, "title": "sinon / autrement", "category": "Condition et Hypothèse", "structure": "(Adv.)", "note": "否则，不然（连接副词，引出与前句相反的假设后果）。", "example": "Dépêche-toi, sinon nous allons rater le début du spectacle."}, {"id": 75, "title": "avant que", "category": "Temps", "structure": "+ Subj. (ne explétif facultatif)", "note": "在……之前（必须用虚拟式；主语相同用 avant de + Inf.）。", "example": "Rentrons avant qu’il ne fasse nuit."}, {"id": 76, "title": "en attendant que", "category": "Temps", "structure": "+ Subj.", "note": "在等待……期间（动作尚未发生，带预期性，用虚拟式；主语相同用 en attendant de + Inf.）。", "example": "Lisez ce magazine en attendant que le directeur soit libre."}, {"id": 77, "title": "jusqu’à ce que", "category": "Temps", "structure": "+ Subj.", "note": "直到……为止。考试中使用虚拟式。", "example": "Restez ici jusqu’à ce que le médecin vous appelle."}, {"id": 78, "title": "après que", "category": "Temps", "structure": "+ Ind.", "note": "在……之后。规范用法接直陈式。", "example": "Après qu’il est parti, nous avons rangé la salle."}, {"id": 79, "title": "dès que / aussitôt que", "category": "Temps", "structure": "+ Ind.", "note": "一……就……。叙述将来的动作时，从句常用简单将来时或先将来时。", "example": "Dès que j’arriverai à Paris, je te téléphonerai."}, {"id": 80, "title": "à peine ... que (+倒装)", "category": "Temps", "structure": "+ Ind.", "note": "刚一……就……。书面语中，à peine 置于句首时通常用主谓倒装。", "example": "À peine était-il arrivé que le téléphone a sonné."}, {"id": 81, "title": "depuis que", "category": "Temps", "structure": "+ Ind.", "note": "自从……以来（表动作持续至今的起点，见图片22、24题干扰项）。", "example": "Depuis qu’il habite à Lyon, il prend le métro tous les jours."}, {"id": 82, "title": "tant que", "category": "Temps", "structure": "+ Ind.", "note": "只要……（持续的时间段内）（易与 pourvu que 混淆：tant que 强调时间持续用直陈式；pourvu que 强调条件用虚拟式）。", "example": "Tant qu’il y a de la vie, il y a de l’espoir."}, {"id": 83, "title": "aussi longtemps que", "category": "Temps", "structure": "+ Ind.", "note": "只要……（时间长度上）（tant que 的同义词，强调时间跨度）。", "example": "Vous pouvez garder ce livre aussi longtemps que vous en aurez besoin."}, {"id": 84, "title": "pendant que", "category": "Temps", "structure": "+ Ind.", "note": "在……期间（强调两个动作同时持续进行，无转折对比含义）。", "example": "Pendant que je cuisinais, il mettait la table."}, {"id": 85, "title": "tandis que / alors que（表时间）", "category": "Temps", "structure": "+ Ind.", "note": "当……的时候（可作纯时间连词，但更常考其“对比转折”义）。", "example": "Il s’est endormi alors que le film venait de commencer."}, {"id": 86, "title": "au fur et à mesure que", "category": "Temps", "structure": "+ Ind.", "note": "随着……（强调两个变化同步渐进，名词短语为 au fur et à mesure de + Nom）。", "example": "Au fur et à mesure que le train avançait, le paysage changeait."}, {"id": 87, "title": "à mesure que", "category": "Temps", "structure": "+ Ind.", "note": "随着……（au fur et à mesure que 的简略形式，同义）。", "example": "À mesure que l’on monte en altitude, l’air se raréfie."}, {"id": 88, "title": "chaque fois que / toutes les fois que", "category": "Temps", "structure": "+ Ind.", "note": "每当……（表习惯性重复发生的时间）。", "example": "Chaque fois qu’elle vient à Paris, elle visite le Louvre."}, {"id": 89, "title": "maintenant que / à présent que", "category": "Temps", "structure": "+ Ind.", "note": "既然现在……，如今……（兼有时间与因果意味）。", "example": "Maintenant que les examens sont finis, nous pouvons nous détendre."}, {"id": 90, "title": "une fois que", "category": "Temps", "structure": "+ Ind.", "note": "一旦……（常与复合时态或先将来时连用，强调动作彻底完成之后）。", "example": "Une fois que tu auras terminé ton rapport, envoie-le-moi."}, {"id": 91, "title": "non seulement ... mais encore / mais aussi", "category": "Comparaison, Manière et Corrélation", "structure": "成对关联", "note": "不仅……而且……（表递进）。", "example": "Cette formation est utile non seulement aux débutants, mais aussi aux employés expérimentés."}, {"id": 92, "title": "soit ... soit ...", "category": "Comparaison, Manière et Corrélation", "structure": "成对关联", "note": "要么……要么…… / 无论……还是……（表二选一或列举选择）。", "example": "Vous pouvez payer soit par carte, soit en espèces."}, {"id": 93, "title": "tantôt ... tantôt ...", "category": "Comparaison, Manière et Corrélation", "structure": "成对关联", "note": "时而……时而……（表两种状态交替出现）。", "example": "Le temps est capricieux : il fait tantôt beau, tantôt froid."}, {"id": 94, "title": "ni ... ni ... (+ ne)", "category": "Comparaison, Manière et Corrélation", "structure": "成对关联", "note": "既不……也不……（双否定，动词前必须保留 ne，不加 pas）。", "example": "Il ne parle ni anglais ni espagnol."}, {"id": 95, "title": "ou bien ... ou bien ...", "category": "Comparaison, Manière et Corrélation", "structure": "成对关联", "note": "或者……或者……（加强语气的排他性二选一）。", "example": "Ou bien tu acceptes nos conditions, ou bien nous rompons les négociations."}, {"id": 96, "title": "d’une part ... d’autre part ...", "category": "Comparaison, Manière et Corrélation", "structure": "成对关联", "note": "一方面……另一方面……（议论文分点论证核心关联词）。", "example": "D’une part, ce projet est coûteux ; d’autre part, sa rentabilité est incertaine."}, {"id": 97, "title": "plus ... plus ... / moins ... moins ...", "category": "Comparaison, Manière et Corrélation", "structure": "成对关联", "note": "越……越……。两个分句直接呼应，通常用逗号隔开。", "example": "Plus on travaille, plus on progresse."}, {"id": 98, "title": "d’autant plus ... que ...", "category": "Comparaison, Manière et Corrélation", "structure": "比较结构", "note": "之所以更加……是因为……（程度加强与原因结合的高频句型）。", "example": "Ce succès est d’autant plus mérité qu’il a travaillé sans relâche."}, {"id": 99, "title": "ainsi que / de même que", "category": "Comparaison, Manière et Corrélation", "structure": "+ Ind.", "note": "正如，以及（放句中连接并列成分时相当于 et；引导从句时表方式比较）。", "example": "Le directeur ainsi que ses adjoints assisteront à la cérémonie."}, {"id": 100, "title": "comme si", "category": "Comparaison, Manière et Corrélation", "structure": "+ Imparfait / P.Q.P.", "note": "好像，仿佛。在这一用法中，未完成过去时表示与主句同时的假设，愈过去时表示在此之前的假设。", "example": "Il parle de ce pays comme s’il y avait vécu toute sa vie."}]}</script>
+<script>
+"use strict";
+const {questions, cards} = JSON.parse(document.querySelector("#data").textContent);
+const app = document.querySelector("#app");
+const clock = document.querySelector("#clock");
+const time = document.querySelector("#time");
+const dialog = document.querySelector("#confirmation");
+const duration = 30 * 60 * 1000;
+const letters = "ABCD";
+const storageKey = "meta-connecteurs-v1";
+const escape = value => String(value).replace(/[&<>"']/g, char => ({
+  "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
+})[char]);
+const twoDigits = value => String(value).padStart(2,"0");
+let state = {view:"home", exam:null, revision:null};
+try {
+  const saved = JSON.parse(localStorage.getItem(storageKey));
+  if (saved) state = saved;
+} catch {}
+
+function persist() {
+  try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch {}
+}
+function go(view, scroll = true) {
+  state.view = view;
+  persist();
+  render();
+  if (scroll) window.scrollTo(0,0);
+  app.querySelector("[data-focus]")?.focus({preventScroll:true});
+}
+function shuffled(items) {
+  const order = [...items];
+  for (let i = order.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  return order;
+}
+function startExam() {
+  state.exam = {end:Date.now() + duration, answers:Array(questions.length).fill(null), index:0, submitted:false, timedOut:false};
+  go("exam");
+}
+function startRevision(ids) {
+  state.revision = {order:shuffled(ids), index:0, unsure:[]};
+  go("cards");
+}
+function expireExam() {
+  const exam = state.exam;
+  if (!exam || exam.submitted || Date.now() < exam.end) return false;
+  submitExam(true);
+  return true;
+}
+function submitExam(timedOut) {
+  if (state.exam.submitted) return;
+  state.exam.submitted = true;
+  state.exam.timedOut = timedOut;
+  if (dialog.open) dialog.close("expired");
+  go("results");
+}
+function updateClock() {
+  if (expireExam()) return;
+  const active = state.view === "exam";
+  clock.style.display = active ? "flex" : "none";
+  if (!active) return;
+  const seconds = Math.ceil(Math.max(0,state.exam.end - Date.now()) / 1000);
+  const formatted = twoDigits(Math.floor(seconds / 60)) + ":" + twoDigits(seconds % 60);
+  if (time.textContent !== formatted) time.textContent = formatted;
+  clock.classList.toggle("urgent", seconds <= 60);
+}
+function home() {
+  const exam = state.exam;
+  const revision = state.revision;
+  const hasCards = revision && revision.index < revision.order.length;
+  return `
+  <section class="hero"><span class="label">Révision intensive</span><h1 tabindex="-1" data-focus>S’entraîner aux connecteurs<br>en français</h1></section>
+  <div class="home-grid">
+    <section class="panel"><span class="label">25 questions · 30 minutes</span><h2>Test sur les connecteurs</h2>
+    <p>Choisissez le connecteur qui convient, puis consultez votre score et le corrigé.</p>
+    <button class="btn primary" data-action="${exam ? "resume-exam" : "start-exam"}">${exam ? (exam.submitted ? "Voir le corrigé" : "Reprendre le test") : "Commencer le test"} →</button></section>
+    <section class="panel"><span class="label">100 cartes mémoire</span><h2>Réviser les connecteurs</h2>
+    <p>Retrouvez le sens et l’emploi de chaque expression. Mettez de côté les cartes à revoir.</p>
+    <button class="btn primary" data-action="${revision ? "resume-cards" : "start-cards"}">${revision ? (hasCards ? "Reprendre la révision" : "Voir le bilan") : "Commencer la révision"} →</button></section>
+  </div>`;
+}
+function examPage() {
+  const {index, answers} = state.exam;
+  const question = questions[index];
+  const answered = answers.filter(answer => answer !== null).length;
+  return `
+  <div class="layout" style="margin-top:0">
+    <section class="panel">
+      <div class="topline"><span class="label">Test sur les connecteurs</span><span class="label">Question ${index + 1} / ${questions.length}</span></div>
+      <p class="muted">Choisissez l’expression qui complète la phrase.</p>
+      <h1 class="prompt" id="question" tabindex="-1" data-focus>${escape(question.stem).replaceAll("_____", '<span class="blank" aria-label="à compléter"></span>')}</h1>
+      <div class="options" role="radiogroup" aria-labelledby="question">
+      ${question.options.map((option,i) => `<button class="option" role="radio" aria-checked="${answers[index] === i}" tabindex="${(answers[index] ?? 0) === i ? 0 : -1}" data-action="answer" data-index="${i}"><span>${letters[i]}</span>${escape(option)}</button>`).join("")}
+      </div>
+      <div class="actions"><button class="btn" data-action="jump" data-index="${index - 1}" ${index === 0 ? "disabled" : ""}>← Précédente</button>
+      ${index + 1 < questions.length ? `<button class="btn primary" data-action="jump" data-index="${index + 1}">Suivante →</button>` : '<button class="btn primary" data-action="confirm">Remettre le test</button>'}</div>
+    </section>
+    <aside class="panel"><div class="actions"><strong>Questions</strong><span class="muted">${answered} / ${questions.length}</span></div>
+      <nav class="navgrid" aria-label="Navigation entre les questions">${questions.map((_,i) => `<button data-action="jump" data-index="${i}" class="${answers[i] === null ? "" : "done"}" ${i === index ? 'aria-current="step"' : ""} aria-label="Question ${i+1}, ${answers[i] === null ? "sans réponse" : "répondue"}">${i+1}</button>`).join("")}</nav>
+      <p class="muted">Le test est remis automatiquement à la fin du temps imparti.</p>
+      <button class="btn primary" data-action="confirm">Remettre le test</button>
+    </aside>
+  </div>`;
+}
+function completedSentence(question) {
+  const parts = question.options[question.key].split(/\s*\.\.\.\s*/);
+  let index = 0;
+  return question.stem.replace(/_____\s*/g, () => {
+    const option = parts[index++];
+    return option + (option.endsWith("'") ? "" : " ");
+  }).replace(/\s+,/g,",");
+}
+function results() {
+  const {answers, timedOut} = state.exam;
+  const score = questions.filter((question,i) => question.key === answers[i]).length;
+  const unanswered = answers.filter(answer => answer === null).length;
+  return `
+  <section class="panel narrow">
+    <div class="topline"><span class="label">Corrigé du test</span><button class="btn" data-action="home">Accueil</button></div>
+    <h1 tabindex="-1" data-focus>${score} / ${questions.length}</h1>
+    <p class="muted">${timedOut ? "Temps écoulé. Test remis automatiquement. " : ""}${score} bonnes réponses · ${questions.length-score-unanswered} erreurs · ${unanswered} sans réponse</p>
+    <div class="result">${questions.map((question,i) => {
+      const answer = answers[i];
+      const correct = answer === question.key;
+      return `<details><summary class="${correct ? "good" : "bad"}">Question ${i+1} · ${correct ? "Correct" : answer === null ? "Sans réponse" : "Incorrect"}</summary>
+        <p>${escape(question.stem)}</p>
+        <p><strong>Votre réponse</strong> · ${answer === null ? "—" : letters[answer] + ". " + escape(question.options[answer])}</p>
+        <p><strong>Bonne réponse</strong> · ${letters[question.key]}. ${escape(question.options[question.key])}</p>
+        <p><em>${escape(completedSentence(question))}</em></p><p lang="zh-CN">${escape(question.note)}</p></details>`;
+    }).join("")}</div>
+    <button class="btn primary" data-action="start-exam">Refaire le test</button>
+  </section>`;
+}
+function cardContent(card) {
+  return `<span class="tag">${escape(card.structure)}</span><p class="cardnote" lang="zh-CN">${escape(card.note)}</p><blockquote>${escape(card.example)}</blockquote>`;
+}
+function flashcard() {
+  const {index, order, unsure} = state.revision;
+  const card = cards[order[index]-1];
+  return `
+  <section class="panel narrow">
+    <div class="topline"><span class="label">Cartes mémoire</span><span class="label">Carte ${index+1} / ${order.length}</span></div>
+    <p class="muted">${index} classée(s) · ${unsure.length} à revoir</p>
+    <progress value="${index}" max="${order.length}" aria-label="Progression"></progress>
+    <span class="label">${escape(card.category)}</span>
+    <h1 class="display" tabindex="-1" data-focus>${escape(card.title)}</h1>
+    ${cardContent(card)}
+    <div class="actions"><button class="btn" data-action="unsure"><span lang="zh-CN">模糊</span> · À revoir</button><button class="btn primary" data-action="known"><span lang="zh-CN">已掌握</span> · Maîtrisé</button></div>
+  </section>`;
+}
+function recap() {
+  const {order, unsure} = state.revision;
+  return `
+  <section class="panel narrow">
+    <div class="topline"><span class="label">Cartes mémoire</span><button class="btn" data-action="home">Accueil</button></div>
+    <h1 tabindex="-1" data-focus>Bilan de révision</h1>
+    <p class="cardnote">${order.length} cartes révisées · ${order.length-unsure.length} maîtrisées · ${unsure.length} à revoir</p>
+    ${unsure.length ? `<h2>Cartes à revoir</h2><div class="result">${unsure.map(id => {
+      const card = cards[id-1];
+      return `<details open><summary>${escape(card.title)}</summary>${cardContent(card)}</details>`;
+    }).join("")}</div>` : ""}
+    <div class="actions">${unsure.length ? '<button class="btn primary" data-action="retry-cards">Revoir ces cartes</button>' : ""}
+    <button class="btn" data-action="start-cards">Mélanger les 100 cartes</button></div>
+  </section>`;
+}
+function render() {
+  const views = {home, exam:examPage, results, cards:flashcard, recap};
+  app.innerHTML = views[state.view]();
+  updateClock();
+}
+document.querySelector("#brand").addEventListener("click",() => go("home"));
+app.addEventListener("click", event => {
+  const button = event.target.closest("button[data-action]");
+  if (!button || expireExam()) return;
+  const index = Number(button.dataset.index);
+  switch (button.dataset.action) {
+    case "home": go("home"); break;
+    case "start-exam": startExam(); break;
+    case "resume-exam": go(state.exam.submitted ? "results" : "exam"); break;
+    case "answer":
+      state.exam.answers[state.exam.index] = index;
+      persist();
+      render();
+      app.querySelector(`[data-action="answer"][data-index="${index}"]`)?.focus({preventScroll:true});
+      break;
+    case "jump":
+      state.exam.index = index;
+      go("exam", innerWidth <= 710);
+      break;
+    case "confirm": {
+      const remaining = state.exam.answers.filter(answer => answer === null).length;
+      document.querySelector("#confirmText").textContent = remaining
+        ? `${remaining} question(s) sans réponse. Les questions laissées vides valent zéro point.`
+        : "Toutes les questions ont une réponse.";
+      dialog.returnValue = "cancel";
+      dialog.showModal();
+      break;
+    }
+    case "start-cards": startRevision(cards.map(card => card.id)); break;
+    case "resume-cards": go(state.revision.index === state.revision.order.length ? "recap" : "cards"); break;
+    case "retry-cards": startRevision(state.revision.unsure); break;
+    case "unsure":
+    case "known": {
+      const revision = state.revision;
+      if (button.dataset.action === "unsure") revision.unsure.push(revision.order[revision.index]);
+      revision.index++;
+      go(revision.index === revision.order.length ? "recap" : "cards");
+      break;
+    }
+  }
+});
+app.addEventListener("keydown", event => {
+  const option = event.target.closest('[role="radio"]');
+  const direction = {ArrowLeft:-1, ArrowUp:-1, ArrowRight:1, ArrowDown:1}[event.key];
+  if (!option || !direction) return;
+  event.preventDefault();
+  const next = (Number(option.dataset.index) + direction + 4) % 4;
+  app.querySelector(`[data-action="answer"][data-index="${next}"]`).click();
+});
+dialog.addEventListener("close", () => {
+  if (dialog.returnValue === "submit" && !expireExam()) submitExam(false);
+});
+setInterval(updateClock,250);
+document.addEventListener("visibilitychange",updateClock);
+window.addEventListener("pageshow",updateClock);
+if (!expireExam()) render();
+</script>
+</body>
+</html>
